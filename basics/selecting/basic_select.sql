@@ -36,30 +36,8 @@ SELECT first_name, last_name, department
 FROM employees
 ORDER BY salary DESC;
 
--- 7. Filtering rows (basic WHERE clause)
-SELECT first_name, last_name, salary
-FROM employees
-WHERE department = 'Sales';
-
--- 8. Filtering using comparison operators
-SELECT first_name, last_name, salary
-FROM employees
-WHERE salary > 50000;
-
--- 9. Filtering using text patterns (LIKE)
-SELECT first_name, last_name, salary
-FROM employees
-WHERE email LIKE '%@gmail.com';
-
--- 10. Limiting results (syntax varies by database)
--- PostgreSQL, MySQL, SQLite:
+-- 8. Limiting results
+-- Works in PostgreSQL, MySQL, SQLite
 SELECT *
 FROM employees
 LIMIT 10;
-
--- SQL Server equivalent:
--- SELECT TOP 10 * FROM employees;
-
--- Oracle equivalent:
--- SELECT * FROM employees FETCH FIRST 10 ROWS ONLY;
- 
