@@ -63,20 +63,3 @@ INNER JOIN departments AS d
     ON e.department_id = d.department_id
 GROUP BY d.department_name;
 
--- 7. INNER JOIN in a subquery
--- Find employees working in departments with more than 10 people
-SELECT
-    e.first_name,
-    e.last_name,
-    d.department_name
-FROM employees AS e
-INNER JOIN (
-    SELECT department_id
-    FROM employees
-    GROUP BY department_id
-    HAVING COUNT(*) > 10
-) AS big_depts
-    ON e.department_id = big_depts.department_id
-INNER JOIN departments AS d
-    ON d.department_id = e.department_id;
-
