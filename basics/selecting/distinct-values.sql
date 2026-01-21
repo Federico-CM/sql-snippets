@@ -36,7 +36,8 @@ FROM employees
 ORDER BY department
 LIMIT 5;
 
--- 7. DISTINCT vs GROUP BY (equivalent in simple cases)
+-- 7. DISTINCT vs GROUP BY 
+-- In this case they are equivalent
 
 -- Using DISTINCT
 SELECT DISTINCT department
@@ -47,13 +48,15 @@ SELECT department
 FROM employees
 GROUP BY department;
 
+
+
 -- 8. COUNT with DISTINCT
 -- Count how many unique departments exist
 SELECT COUNT(DISTINCT department) AS department_count
 FROM employees;
 
 -- 9. DISTINCT across all selected columns
--- Removes rows that are fully duplicated
+-- Selects rows that are fully duplicated
 -- (Be careful with wildcards!)
 SELECT DISTINCT *
 FROM employees;
