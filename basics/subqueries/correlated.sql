@@ -31,7 +31,7 @@ WHERE EXISTS
           SELECT 1
           FROM employees e2
           WHERE e2.department_id = e.department_id
-            AND e2.employee_id <> e.employee_id
+            AND e2.employee_id != e.employee_id
       );
 
 -- 3. Correlated subquery with NOT EXISTS
