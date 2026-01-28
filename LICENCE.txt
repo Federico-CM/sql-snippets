@@ -1,0 +1,13 @@
+CC0 1.0 Universal
+
+This work is dedicated to the public domain under the Creative Commons CC0 1.0 Universal dedication.
+
+You are free to use, copy, modify, distribute, remix, sell, or build upon this work, for any purpose — commercial or non-commercial — without asking permission.
+
+Attribution is not required (though it’s appreciated).
+
+This work is provided as-is, without warranty of any kind.
+The author is not responsible for how this work is used.
+
+Legal text:
+https://creativecommons.org/publicdomain/zero/1.0/ 
